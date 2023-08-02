@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="addPortfolio(myForm.value)">
+    <div>
+      <label>
+        Portfolio Name:
+        <input formControlName="portfolioName" >
+      </label>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>

@@ -1,0 +1,49 @@
+<!-- MARQUEE TAG -->
+
+
+
+
+<!-- DETAILS -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-center">
+
+        <div>
+          <button class="btn btn-lg custombtn" type="submit" routerLink="/details">More details of the
+            stocks</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="card rounded-lg shadow-lg chart-card">
+        <div class="card-body">
+
+          <div class="chart-container">
+            <iframe [src]="chartUrl" frameborder="0" class="chart-frame"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Portfolio</h2>
+          <img src="../../assets/img/port.png" style="height: 100px;" class="center">
+          <h4 class="card-subtitle mb-2 text-muted" style="text-align: center;">See Detailed Analysis & Insights</h4>
+          <button class="btn btn-primary center1" routerLink="/yourportfolios" >Create Portfolio</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <br><br><br>
+  <app-gainer-loser></app-gainer-loser>
+
+
+  <app-news></app-news>
+</div>

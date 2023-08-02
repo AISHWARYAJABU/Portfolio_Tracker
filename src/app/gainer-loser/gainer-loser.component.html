@@ -1,0 +1,117 @@
+<div class="container">
+    <div class="row">
+      <div class="col-6">
+      <h3 style="text-align: center;">Most Gainers</h3>
+      <table class="table table-color">
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Company Name</th>
+            <th>Price</th>
+            <th>Change</th>
+            <th>Change%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let gainer of gainers" >
+            <td>{{ gainer.symbol }}</td>
+            <td>{{ gainer.name }}</td>
+            <td>{{ gainer.price }}</td>
+            <td>{{ gainer.change }}</td>
+            <td class="gainer">+{{ gainer.changesPercentage }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  
+    <div class="col-6">
+      <h3 style="text-align: center;">Most Losers</h3>
+      <table class="table table-color">
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Company Name</th>
+            <th>Price</th>
+            <th>Change</th>
+            <th>Change%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let loser of losers">
+            <td>{{ loser.symbol }}</td>
+            <td>{{ loser.name }}</td>
+            <td>{{ loser.price }}</td>
+            <td>{{ loser.change }}</td>
+            <td class="loser">{{ loser.changesPercentage }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <h3 class="table-header">Most Gainers</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Company Name</th>
+              <th>Price</th>
+              <th>Change</th>
+              <th>Change %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let gainer of gainers">
+              <td>{{ gainer.symbol }}</td>
+              <td>{{ gainer.name }}</td>
+              <td>{{ gainer.price }}</td>
+              <td [ngClass]="{'gainer': gainer.change >= 0, 'loser': gainer.change < 0}">
+                {{ gainer.change }}
+              </td>
+              <td [ngClass]="{'gainer': gainer.changesPercentage >= 0, 'loser': gainer.changesPercentage < 0}">
+               +{{ gainer.changesPercentage }}%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="col-6">
+        <h3 class="table-header">Most Losers</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Company Name</th>
+              <th>Price</th>
+              <th>Change</th>
+              <th>Change %</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let loser of losers">
+              <td>{{ loser.symbol }}</td>
+              <td>{{ loser.name }}</td>
+              <td>{{ loser.price }}</td>
+              <td [ngClass]="{'gainer': loser.change >= 0, 'loser': loser.change < 0}">
+                {{ loser.change }}
+              </td>
+              <td [ngClass]="{'gainer': loser.changesPercentage >= 0, 'loser': loser.changesPercentage < 0}">
+                {{ loser.changesPercentage }}%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div> -->
+  
+  
+  
+  

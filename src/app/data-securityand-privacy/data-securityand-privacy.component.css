@@ -1,0 +1,91 @@
+/* Custom styles for Portfolio Analysis section */
+
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  
+  .portfolio-analysis {
+    width: 100%; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .h1 {
+    font-size: 50 px;
+    font-weight: bold;
+  }
+  
+  .portfolio-analysis h2 {
+    font-size: 30 px;
+    font-weight: bold;
+  }
+  
+  .portfolio-analysis p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .portfolio-analysis ul {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .portfolio-analysis li {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .carousel-inner .item > img {
+    -webkit-animation: zoom 25s;
+    animation: zoom 25s;
+  }
+  
+  /* Additional styles for the carousel */
+  .carousel.slide {
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+  }
+  
+  .carousel-inner .item {
+    width: 100%;
+  }
+  
+  .carousel-inner .item > img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-control {
+    width: 5%;
+  }
+  
+  /* Styles for the main container */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
